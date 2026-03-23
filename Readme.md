@@ -16,6 +16,21 @@ MPC Video Renderer is a free and open-source video renderer for DirectShow. The 
 * Windows 8.1 or newer
 * DirectX 10/11 video card
 
+## Installation
+
+1. Download the release archive (`.zip`) from the [releases page](https://github.com/Aleksoid1978/VideoRenderer/releases).
+2. Create a folder in any permanent location (for example, next to your player or application executable, such as `MpcVideoRenderer\` in the same directory as your player).
+3. Extract the contents of the archive into that folder. The folder will contain:
+   - `MpcVideoRenderer.ax` — 32-bit filter
+   - `MpcVideoRenderer64.ax` — 64-bit filter
+   - `Install_MPCVR_32.cmd` / `Install_MPCVR_64.cmd` — installation scripts
+   - `Uninstall_MPCVR_32.cmd` / `Uninstall_MPCVR_64.cmd` — uninstallation scripts
+4. Right-click `Install_MPCVR_64.cmd` (for 64-bit systems) or `Install_MPCVR_32.cmd` (for 32-bit systems) and choose **Run as administrator**.
+
+> **Important:** Do not move or delete the `.ax` file after installation. The installer registers the filter at its current location. If you move the file later you must uninstall and reinstall from the new location.
+
+To uninstall, right-click the matching `Uninstall_MPCVR_*.cmd` script and choose **Run as administrator**.
+
 ## License
 
 MPC Video Renderer's code is licensed under [GPL v3].
